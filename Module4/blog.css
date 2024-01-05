@@ -1,0 +1,9 @@
+nav>ul>li{
+    /* in one line navbar */
+    display:inline; 
+    margin-right: 20px;
+}
+
+footer{
+    margin-bottom: 30px;
+}
