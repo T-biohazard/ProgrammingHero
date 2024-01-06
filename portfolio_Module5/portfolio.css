@@ -1,0 +1,41 @@
+
+
+body{font-family: 'Open Sans', sans-serif;}
+
+.r{
+    color: orange;
+}
+
+.navT{
+    color: black;
+    font-size: 45px;
+
+    font-weight: 800;
+}
+
+nav{
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
+
+}
+
+ul li{
+    margin-right: 50px;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+.btnpromary{
+   background: orange;color: white; 
+   border-radius: 5px;
+   border: 0px;
+}
