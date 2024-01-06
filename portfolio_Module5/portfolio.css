@@ -98,5 +98,72 @@ main{
 
 .info-description{
     font-size: larger;
-    font-style:inherit;
+    
 }
+
+#des{
+    padding: 30px;
+}
+
+
+.skills{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   
+    gap: 23px;
+
+}
+.skill{
+    padding: 30px;
+  background-color:  #FFF ;
+   box-shadow:0px 6px 60px 0px rgba(0,0 ,0, 0.07)
+}
+
+/* resume */
+.resume-container{
+    display: flex;
+}
+
+.resume-col-ti{
+color:darkcyan;
+font-size: 20px;
+font-weight: 700;
+}
+
+.summurytitl{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.resume-container{
+    display: flex;
+}
+hr{
+    margin: 20px;
+}
+
+.tl{
+    font-size: 29px;
+}
+.footercol{
+ width: 50%;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: antiquewhite;
+    
+}
+
+.Contform input,textarea{
+display: block;
+margin-bottom: 24px ;
+padding: 9px 29px;
+border-radius: 5px;
+border: 0px;
+width: 100%;
+
+}
+
