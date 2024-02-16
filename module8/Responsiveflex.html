@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .container{
+        display: flex;
+        gap: 20px;
+    }
+    .box{
+        background-color: yellow;
+        border-radius: 9px;
+        padding: 20px;
+
+    }
+/* for small device @@@@*/
+    @media screen and (max-width: 576px){
+        .container{
+            flex-direction: column;
+        }
+    }
+
+/* wrap use here !@@@ */
+    .item{
+        height: 100px;
+        width: 200px;
+        border: 2px solid yellowgreen;
+
+    }
+.container2{
+    display: flex;
+    flex-wrap: wrap;
+}
+</style>
+    <title>Document</title>
+</head>
+<body>
+    <h2>flex responsivce</h2>
+    <div class="container">
+        <div class="box"><h1>First</h1><p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta ullam dicta error fugiat nisi optio omnis numquam necessitatibus minima voluptates sed, ipsa cumque. Magnam hic magni nobis et distinctio.</p></div>
+
+        <div class="box"><h1>second</h1><p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eveniet ullam laboriosam, nostrum sed quod sapiente saepe accusantium officiis quaerat excepturi, perferendis iste perspiciatis labore inventore possimus praesentium blanditiis optio veniam mollitia</p></div>
+    </div>
+    <div class="container2">
+        <div class="item">item-1</div>
+        <div class="item">item-2</div>
+        <div class="item">item-3</div>
+        <div class="item">item-4</div>
+        <div class="item">item-5</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+
+<body>
+<header>
+    <h1 onclick="console.log('i suck')">Dom events </h1>
+</header>
+    
+<main>
+    <button onclick="console.log(7)">Click here</button>
+    <button  onclick="console.log(13)">another one</button>
+    <button id="pur" onclick="purrr()">another one</button>
+    <button onclick="makeREd()">make red</button>
+    <button onclick="document.body.style.backgroundColor='Yellow'">Make Yellow</button>
+    <script  src="events.js"></script>
+    <script>
+        function makeREd(){
+            document.body.style.background='red';
+        }
+        function purrr(){
+            document.body.style.background='green';
+        }
+    </script>
+    <script>
+        const purpleButt=document.getElementById('pur');
+        purpleButt.onClick=function purrr(){
+            document.body.style.background='green';
+        }
+    </script>
+</main>
+
+
+</body>
+</html>

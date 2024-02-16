@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DOM</h1>
+
+    </header>
+    <main>
+        <section>
+            <h1>DOM is here </h1>
+            <ul>
+                <li>sbdjha</li>
+                <li>cvzxc</li>
+                <li>werwt</li>
+            </ul>
+        </section>
+        <section>
+            <h1>DOM is here </h1>
+            <ul>
+                <li>sbdjha</li>
+                <li>cvzxc</li>
+                <li>werwt</li>
+            </ul>
+        </section>
+        <section>
+            <h1>DOM is here </h1>
+            <ul id="phli">
+                <li>sbdjha</li>
+                <li>cvzxc</li>
+                <li>werwt</li>
+            </ul>
+        </section>
+        
+    </main>
+    <script src="dom.js"></script>
+    <script src="append.js"></script>
+    <script>
+        // getElementbytagNAme
+        // html and js between DOM connection
+        const getele=document.getElementsByTagName('li');
+        for(const li of getele){
+            console.log(li.innerText);
+        }
+    </script>
+</body>
+</html>
