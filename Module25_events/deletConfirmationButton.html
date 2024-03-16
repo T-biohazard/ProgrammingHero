@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- musttttttt do it -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Delete Confirmation Button</h1>
+<button id="btn" >Events</button>
+<input id="textfield" type="text">
+
+<script>
+//   document.getElementById('btn').addEventListener('mousemove',function(){
+//     console.log('done');
+//   })
+//   document.getElementById('btn').addEventListener('blur',function(){
+//     console.log('blur hocche!');
+//   })
+
+  document.getElementById('textfield').addEventListener('focus',function(){
+    console.log('txtdone')
+  })
+  document.getElementById('textfield').addEventListener('keyup',function(){
+    console.log(event.target.value)
+  })
+  
+//   document.getElementById('textfield').addEventListener('keyup',function(event){
+// const txt=event.target.value;
+// const deletebutt=document.getElementById('btn-del');
+// if (text==='delete'){
+//     btn.removeAttribute('disable');
+// }
+// else{
+//     btn.setAttribute('disable',ture);
+// }
+//   })
+
+</script>
+
+
+</body>
+</html>

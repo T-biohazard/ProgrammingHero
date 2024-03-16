@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <p id="adding-cmnt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis doloremque in atque recusandae. Iste, nulla doloremque? Eveniet sapiente fugiat quos!</p>
+
+    <textarea name="" id="cmnt" cols="30" rows="10"></textarea>
+    <button id="pressbutt">sub</button>
+
+<script>
+    //1. add event listener
+    document.getElementById('pressbutt').addEventListener('click',function(){
+        //getting cmnt inside the txt area
+        const cmntbox=document.getElementById('cmnt');
+        const newcmnt=cmntbox.value;
+
+        //3 add in para
+        const containercmnt=document.getElementById('adding-cmnt');
+        const p=document.createElement('p');
+
+        p.innerText=newcmnt;
+        containercmnt.appendChild(p);
+    })
+</script>
+
+</body>
+</html>

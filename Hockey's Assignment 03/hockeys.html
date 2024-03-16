@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- daisyUI -->
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+
+  <!-- TailwindCss -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- font sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    .fontsans {
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+
+  <title>Hockey's</title>
+</head>
+
+
+<body >
+
+  <header class="lg:mx-32 mx-12  fontsans">
+    <nav>
+      <div class="navbar   mt-16 ">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-[#161616] text-base">
+              <li class="text-red-700 font-bold"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold">Hockey<span
+              class="text-red-800 m-0 p-1">'</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex mt-2">
+          <ul class="menu menu-horizontal px-1 text-[#000000] text-base">
+            <li class=" text-red-700 font-bold"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button> <svg class="mr-6 hidden lg:block" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              viewBox="0 0 24 24" fill="none">
+              <g clip-path="url(#clip0_5_6)">
+                <path
+                  d="M3 10C3 10.9193 3.18106 11.8295 3.53284 12.6788C3.88463 13.5281 4.40024 14.2997 5.05025 14.9497C5.70026 15.5998 6.47194 16.1154 7.32122 16.4672C8.1705 16.8189 9.08075 17 10 17C10.9193 17 11.8295 16.8189 12.6788 16.4672C13.5281 16.1154 14.2997 15.5998 14.9497 14.9497C15.5998 14.2997 16.1154 13.5281 16.4672 12.6788C16.8189 11.8295 17 10.9193 17 10C17 9.08075 16.8189 8.1705 16.4672 7.32122C16.1154 6.47194 15.5998 5.70026 14.9497 5.05025C14.2997 4.40024 13.5281 3.88463 12.6788 3.53284C11.8295 3.18106 10.9193 3 10 3C9.08075 3 8.1705 3.18106 7.32122 3.53284C6.47194 3.88463 5.70026 4.40024 5.05025 5.05025C4.40024 5.70026 3.88463 6.47194 3.53284 7.32122C3.18106 8.1705 3 9.08075 3 10Z"
+                  stroke="#89898B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M21 21L15 15" stroke="#89898B" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_5_6">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg></button>
+
+          <!-- btnnn  -->
+
+          <a class="btn text-white text-lg lg:text-xl font-medium bg-orange-600 mr-3 lg:mr-0">Get Ticket</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="lg:mx-auto  my-12">
+      <div class="carousel w-full">
+
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="images/1.png" class="w-full h-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="images/2.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="images/1.png" class="w-full" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="flex justify-end lg:-mt-80 lg:mr-8">
+        <div class="mt-3 lg:mt-0 z-20 bg-black text-white space-y-4 lg:p-8 p-4 lg:rounded-2xl rounded-xl max-w-xl">
+          <h3 class="text-lg lg:text-2xl font-extrabold">Meet all the heroes from the field</h3>
+          <p class="lg:text-base text-sm font-medium text-[#FFFFFF99] max-w-lg">These players, who form the core of our club, have proven to be incredibly gifted, capable leaders who are passionate about their sport.
+
+          </p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  </header>
+
+
+  <!-- body part 1 Professional Hockeys Club-->
+  <main class="lg:mx-32 lg:my-64 mx-12  fontsans">
+    <section >
+      <div class=" text-center fontsans ">
+        <h1 class="text-4xl font-bold lg:mt-36 mb-8">Professional Hockeys Club</h1>
+        <p class="text-xl lg:px-28 px-2">understanding the role of each piece of gear contributes to a safer and more enjoyable playing experience. As we believe in the holistic development of players, our lessons extend beyond equipment to cover various aspects of the game, including skill development, teamwork, and strategic thinking. </p>
+      </div>
+
+      <!-- parcentage -->
+
+      <div class="grid lg:grid-cols-4 mt-24 text-center sm:grid-cols-1">
+
+        <!-- 87 -->
+        <div>
+          <div class="text-6xl radial-progress text-red-500" style="--value:87; --size:12rem;" role="progressbar">
+            <div class="text-black font-bold">87%</div>
+          </div>
+          <h3 class="fontsans text-2xl  mt-6  font-bold">Prayer Facility</h3>
+          <p class="text-xl fontsans mt-6 mb-6">Prayer Facility have achieved 87% whict is super duper.</p>
+        </div>
+
+        <div>
+          <div class="text-6xl radial-progress text-green-500" style="--value:95; --size:12rem;" role="progressbar">
+            <div class="text-black font-bold">95%</div> </div>
+          <h3 class="fontsans text-2xl mt-6 font-bold">Experienced Coach</h3>
+          <p class="text-xl fontsans mt-6 mb-6">Experienced Coach have achieved 95% whict is super duper.</p>
+        </div>
+
+        <div>
+          <div class="text-6xl radial-progress text-yellow-300" style="--value:90; --size:12rem;" role="progressbar">
+         <div class="text-black font-bold">90%</div>
+          </div>
+          <h3 class="fontsans text-2xl mt-6 font-bold">Senior Player</h3>
+          <p class="text-xl fontsans mt-6 mb-6">Senior Player have achieved 90% whict is super duper.</p>
+        </div>
+
+        <div class="text-6xl">
+          <div>
+            <div class=" radial-progress text-blue-400" style="--value:80;  --size:12rem;" role="progressbar">
+              <div class="text-black font-bold">80%</div>
+            </div>
+          </div>
+          <h3 class="fontsans text-2xl mt-6 font-bold">Training Ground</h3>
+          <p class="text-xl fontsans mt-6 mb-6">Training Ground have achieved 80% whict is super duper.</p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- program  section -->
+    <section>
+      <div class="text-center  lg:mt-36 mt-8 ">
+        <h3 class="mb-6 text-4xl font-bold">Program Section</h3>
+        <p class="text-xl fontsans mt-6">Hockey programs play a pivotal role in fostering talent, promoting sportsmanship, and creating a vibrant community of players and enthusiasts.</p>
+      </div>
+
+      <!-- cards 3 -->
+      <div class="fontsans ">
+
+        <div class="grid lg:grid-cols-2 sm:grid-cols-1 items-center gap-12  mt-12 ">
+
+          <div>
+            <div class="card max-w-3/4 bg-base-100 shadow-xl image-full ">
+              <figure><img class="w-full" src="images/2.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title lg:pt-16 text-3xl text-white">Junior Program</h2>
+                <p>A junior hockey program serves as a crucial stepping stone in the development of young players aspiring to make a mark in the world of hockey. Tailored for participants in their early teens, these programs are designed to provide a comprehensive foundation in both skills development and tactical understanding of the game. Typically structured into age-appropriate categories, junior programs aim to cultivate a love for hockey while instilling discipline and teamwork.</p>
+
+                <div class="card-actions justify-start mb-8">
+                  <button
+                    class="btn btn-primary text-xl rounded-xl text-white fontsans bg-orange-500 border-none">Register
+                    Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="card  bg-base-100 shadow-xl image-full">
+              <figure><img class="w-full" src="images/3.png" alt="Shoes" /></figure>
+              <div class="card-body">
+                <h2 class="card-title lg:pt-16 text-3xl text-white">Teenager Program</h2>
+                <p>These programs encompass a range of initiatives, from grassroots development to elite training, catering to players of all ages and skill levels. At the grassroots level, introductory programs aim to instill a love for the sport, teaching fundamental skills and emphasizing teamwork. Youth development programs then provide a structured pathway for players to hone their abilities and compete at progressively higher levels. These initiatives often include coaching clinics, skill development camps, and leagues tailored to different age groups. </p>
+
+                <div class="card-actions justify-start mb-8">
+                  <button
+                    class="btn btn-primary text-xl rounded-xl text-white fontsans bg-orange-500 border-none ">Register
+                    Now!</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- solo card -->
+        <div class="card w-full  bg-base-100 shadow-xl image-full mt-12">
+          <figure><img class="w-full" src="images/4.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title lg:pt-48 text-3xl text-white">Professional Program</h2>
+            <p>Professional hockey programs represent the pinnacle of the sport, providing a stage for elite athletes to showcase their skills at the highest level of competition. These programs are typically associated with national leagues and international competitions, where top-tier players compete for professional teams or represent their countries on the global stage. The professional level is characterized by a high degree of skill, strategic gameplay, and intense competition, captivating fans and enthusiasts worldwide. Players in professional programs often undergo rigorous training regimens, including specialized skill development, advanced tactical strategies, and comprehensive physical conditioning to meet the demands of elite competition. </p>
+
+            <div class="card-actions justify-start mb-24">
+              <button class="btn btn-primary text-xl rounded-xl text-white fontsans bg-orange-500 border-none ">Register
+                Now!</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- Our New Products -->
+
+    <section >
+      <div class="text-center lg:mt-36 mt-12">
+        <h3 class="text-4xl font-bold">Our New Products</h3>
+        <p class="text-xl mt-4 lg:px-32">Professional hockey programs serve as the culmination of years of dedication and hard work, representing the highest standard of excellence in the world of hockey.</p>
+    
+      </div>
+
+      <!--product grid cards -->
+
+      <div class="grid lg:grid-cols-2 grid-cols-1 mt-20">
+
+        <!-- card-item($) -->
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row">
+            <img class="lg:w-auto sm:w-full" src="images/9.png" />
+            <div>
+
+              <!-- first line -->
+              <div class="flex gap-7 pt-2 pb-2">
+                <div class="flex gap-3 justify-start ">
+                  <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <div> 5.0</div>
+                </div>
+
+                <div>
+                  <div class="flex gap-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
+                    </svg>
+                    <div>20</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                  </svg>
+                  <h3>200</h3>
+                </div>
+              </div>
+              <h1 class="text-2xl font-bold">World Cup Flags Football</h1>
+              <p class="py-2">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <!-- last line -->
+              <div class="flex gap-8 mt-1 pb-2">
+                <div class="text-red-600 font-bold">Price - 22.00$</div>
+                <div class="flex gap-3">
+                  <div>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+                  </div>
+                  <div>Free delivery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card-item($) -->
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row">
+            <img class="lg:w-auto sm:w-full" src="images/6.png" />
+            <div>
+
+              <!-- first line -->
+              <div class="flex gap-7 pt-2 pb-2">
+                <div class="flex gap-3 justify-start ">
+                  <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <div> 5.0</div>
+                </div>
+
+                <div>
+                  <div class="flex gap-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
+                    </svg>
+                    <div>20</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                  </svg>
+                  <h3>200</h3>
+                </div>
+              </div>
+              <h1 class="text-2xl font-bold">World Cup Flags Football</h1>
+              <p class="py-2">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <!-- last line -->
+              <div class="flex gap-8 mt-1 pb-2">
+                <div class="text-red-600 font-bold">Price - 22.00$</div>
+                <div class="flex gap-3">
+                  <div>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+                  </div>
+                  <div>Free delivery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card-item($) -->
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row">
+            <img class="lg:w-auto sm:w-full" src="images/7.png" />
+            <div>
+
+              <!-- first line -->
+              <div class="flex gap-7 pt-2 pb-2">
+                <div class="flex gap-3 justify-start ">
+                  <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <div> 5.0</div>
+                </div>
+
+                <div>
+                  <div class="flex gap-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
+                    </svg>
+                    <div>20</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                  </svg>
+                  <h3>200</h3>
+                </div>
+              </div>
+              <h1 class="text-2xl font-bold">World Cup Flags Football</h1>
+              <p class="py-2">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <!-- last line -->
+              <div class="flex gap-8 mt-1 pb-2">
+                <div class="text-red-600 font-bold">Price - 22.00$</div>
+                <div class="flex gap-3">
+                  <div>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+                  </div>
+                  <div>Free delivery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card-item($) -->
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row">
+            <img class="lg:w-auto sm:w-full" src="images/8.png" />
+            <div>
+
+              <!-- first line -->
+              <div class="flex gap-7 pt-2 pb-2">
+                <div class="flex gap-3 justify-start ">
+                  <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <div> 5.0</div>
+                </div>
+
+                <div>
+                  <div class="flex gap-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
+                    </svg>
+                    <div>20</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                  </svg>
+                  <h3>200</h3>
+                </div>
+              </div>
+              <h1 class="text-2xl font-bold">World Cup Flags Football</h1>
+              <p class="py-2">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <!-- last line -->
+              <div class="flex gap-8 mt-1 pb-2">
+                <div class="text-red-600 font-bold">Price - 22.00$</div>
+                <div class="flex gap-3">
+                  <div>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+                  </div>
+                  <div>Free delivery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card-item($) -->
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row">
+            <img class="lg:w-auto sm:w-full" src="images/9.png" />
+            <div>
+
+              <!-- first line -->
+              <div class="flex gap-7 pt-2 pb-2">
+                <div class="flex gap-3 justify-start ">
+                  <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <div> 5.0</div>
+                </div>
+
+                <div>
+                  <div class="flex gap-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
+                    </svg>
+                    <div>20</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                  </svg>
+                  <h3>200</h3>
+                </div>
+              </div>
+              <h1 class="text-2xl font-bold">World Cup Flags Football</h1>
+              <p class="py-2">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <!-- last line -->
+              <div class="flex gap-8 mt-1 pb-2">
+                <div class="text-red-600 font-bold">Price - 22.00$</div>
+                <div class="flex gap-3">
+                  <div>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+                  </div>
+                  <div>Free delivery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card-item($) -->
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row">
+            <img class="lg:w-auto sm:w-full" src="images/10.png" />
+            <div>
+
+              <!-- first line -->
+              <div class="flex gap-7 pt-2 pb-2">
+                <div class="flex gap-3 justify-start ">
+                  <svg class="w-4 h-4 text-yellow-500 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" viewBox="0 0 22 20">
+                    <path
+                      d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                  </svg>
+                  <div> 5.0</div>
+                </div>
+
+                <div>
+                  <div class="flex gap-3">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M288 80c-65.2 0-118.8 29.6-159.9 67.7C89.6 183.5 63 226 49.4 256c13.6 30 40.2 72.5 78.6 108.3C169.2 402.4 222.8 432 288 432s118.8-29.6 159.9-67.7C486.4 328.5 513 286 526.6 256c-13.6-30-40.2-72.5-78.6-108.3C406.8 109.6 353.2 80 288 80zM95.4 112.6C142.5 68.8 207.2 32 288 32s145.5 36.8 192.6 80.6c46.8 43.5 78.1 95.4 93 131.1c3.3 7.9 3.3 16.7 0 24.6c-14.9 35.7-46.2 87.7-93 131.1C433.5 443.2 368.8 480 288 480s-145.5-36.8-192.6-80.6C48.6 356 17.3 304 2.5 268.3c-3.3-7.9-3.3-16.7 0-24.6C17.3 208 48.6 156 95.4 112.6zM288 336c44.2 0 80-35.8 80-80s-35.8-80-80-80c-.7 0-1.3 0-2 0c1.3 5.1 2 10.5 2 16c0 35.3-28.7 64-64 64c-5.5 0-10.9-.7-16-2c0 .7 0 1.3 0 2c0 44.2 35.8 80 80 80zm0-208a128 128 0 1 1 0 256 128 128 0 1 1 0-256z" />
+                    </svg>
+                    <div>20</div>
+                  </div>
+                </div>
+
+                <div class="flex gap-3">
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                    <path
+                      d="M225.8 468.2l-2.5-2.3L48.1 303.2C17.4 274.7 0 234.7 0 192.8v-3.3c0-70.4 50-130.8 119.2-144C158.6 37.9 198.9 47 231 69.6c9 6.4 17.4 13.8 25 22.3c4.2-4.8 8.7-9.2 13.5-13.3c3.7-3.2 7.5-6.2 11.5-9c0 0 0 0 0 0C313.1 47 353.4 37.9 392.8 45.4C462 58.6 512 119.1 512 189.5v3.3c0 41.9-17.4 81.9-48.1 110.4L288.7 465.9l-2.5 2.3c-8.2 7.6-19 11.9-30.2 11.9s-22-4.2-30.2-11.9zM239.1 145c-.4-.3-.7-.7-1-1.1l-17.8-20c0 0-.1-.1-.1-.1c0 0 0 0 0 0c-23.1-25.9-58-37.7-92-31.2C81.6 101.5 48 142.1 48 189.5v3.3c0 28.5 11.9 55.8 32.8 75.2L256 430.7 431.2 268c20.9-19.4 32.8-46.7 32.8-75.2v-3.3c0-47.3-33.6-88-80.1-96.9c-34-6.5-69 5.4-92 31.2c0 0 0 0-.1 .1s0 0-.1 .1l-17.8 20c-.3 .4-.7 .7-1 1.1c-4.5 4.5-10.6 7-16.9 7s-12.4-2.5-16.9-7z" />
+                  </svg>
+                  <h3>200</h3>
+                </div>
+              </div>
+              <h1 class="text-2xl font-bold">World Cup Flags Football</h1>
+              <p class="py-2">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+              <!-- last line -->
+              <div class="flex gap-8 mt-1 pb-2">
+                <div class="text-red-600 font-bold">Price - 22.00$</div>
+                <div class="flex gap-3">
+                  <div>
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                      <path
+                        d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+                  </div>
+                  <div>Free delivery</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <!--client quest  -->
+    <section class="container mx-auto">
+      <!-- featured section -->
+      <div class="text-center my-24">
+          <h2 class="text-3xl font-extrabold mb-5">Clients Question</h2>
+          <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available, but
+              the majority have suffered alteration in some form, by injected humour, or randomised words which don't
+              look even slightly believable. </p> </div>
+              <div class="lg:flex mx-3">
+
+    <img src="images/11.png" alt="">
+    <div class="lg:mb-7 text-left ">
+      <div class="collapse collapse-plus bg-base-200 lg:pb-4">
+        <input type="radio" name="my-accordion-3" checked="checked" /> 
+        <div class="collapse-title text-2xl font-bold">
+          What is the pricing structure for equipment rental in our hockey training programs?
+        </div>
+                <div class="collapse-content text-sm">
+                  <p class="text-xl">Effective and proper equipment is integral to the success and safety of any hockey program. </p>
+                </div>
+              </div>
+
+              <!-- accordation -->
+              <div class="collapse collapse-plus bg-base-200 w-full divide-y">
+
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">
+                  How can I book private lessons for ski touring, and what is the booking process?
+                </div>
+                <div class="collapse-content text-sm">
+                  <p class="text-xl">In our comprehensive lessons, we prioritize educating players about the importance of selecting, using, and maintaining their equipment. </p>
+
+                </div>
+              </div>
+
+              <!-- accordation -->
+              <div class="collapse collapse-plus bg-base-200 w-full divide-y ">
+
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">
+                  Could you provide details on equipment included in the pricing for hockey training sessions?
+                </div>
+                <div class="collapse-content text-sm">
+                  <p class="text-xl">understanding the role of each piece of gear contributes to a safer and more enjoyable playing experience. </p>
+
+                </div>
+              </div>
+
+              <!-- accordation -->
+              <div class="collapse collapse-plus bg-base-200 w-full  divide-y">
+
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">
+                  What is the pricing policy for booking private lessons in ski touring?
+                </div>
+                <div class="collapse-content text-sm">
+                  <p class="text-xl">In our comprehensive lessons, we prioritize educating players about the importance of selecting, using, and maintaining their equipment. </p>
+
+                </div>
+              </div>
+
+              <!-- accordation -->
+              <div class="collapse collapse-plus bg-base-200 w-full divide-y ">
+
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">
+                  How do I go about booking private hockey training sessions, and what are the associated costs?
+                </div>
+                <div class="collapse-content text-sm">
+                  <p class="text-xl">understanding the role of each piece of gear contributes to a safer and more enjoyable playing experience. </p>
+
+                </div>
+              </div>
+
+              <!-- accordation -->
+              <div class="collapse collapse-plus bg-base-200 w-full divide-y ">
+
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title text-2xl font-bold">
+                  Can you outline the pricing options for equipment rental during ski touring activities?
+                </div>
+                <div class="collapse-content text-sm">
+                  <p class="text-xl">In our comprehensive lessons, we prioritize educating players about the importance of selecting, using, and maintaining their equipment. </p>
+
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        
+     
+    </section>
+
+
+
+    <!--get in toyuch  -->
+
+    <div class="text-center lg:mt-32 mt-6 mb-12">
+      <h3 class="font-bold text-4xl">Get In Touch</h3>
+      <p class="pt-6 lg:text-xl lg:px-48">Official website, contacting them through social media channels, or using directory services. Always ensure that you obtain contact information from reliable and official sources to avoid potential scams or misinformation.</p>
+    </div>
+
+
+
+    <!-- contact  section -->
+
+
+    <section>
+      <div class="container mx-auto ">
+
+        <div class="items-center gap-x-28  mt-12 grid grid-cols-1 lg:grid-cols-3">
+
+          <!-- parent -->
+          <div class="flex justify-start items-start flex-col sm:items-center  ">
+
+            <div class=" ">
+
+              <div class="mt-4 bg-yellow-50 p-4 rounded-2xl  ">
+                <div class=" pb-3 justify-start mx-auto">
+                  <img src="Images/Group 1171275317.png" alt="">
+                </div>
+                <div class="">
+                 
+                  <p>Phone No</p>
+                  <p class="font-bold text-2xl pt-2">(+62) 123-321-543</p>
+                </div>
+              </div>
+
+              <div class="mt-4 bg-slate-300 p-4 rounded-2xl">
+                <div class="pb-3  justify-start">
+                  <img src="Images/Group 1171275318.png" alt="">
+                </div>
+                <div class="">
+               
+                  <p>Em@il</p>
+                  <p class="font-bold text-2xl pt-2">assignment3@hmail.com</p>
+                </div>
+              </div>
+
+
+              <div class="mt-4 bg-slate-400 p-4 rounded-2xl">
+                <div class="pb-3  justify-startr ">
+                  <img src="Images/Group 1171275321.png" alt="">
+                </div>
+                <div class="">
+                 
+                  <p>location</p>
+                  <p class="font-bold text-2xl pt-2">Dhaka, BD</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="lg:col-span-2 mt-6">
+            <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 font-bold">
+
+              <div>
+                <label for=""> Name</label>
+                <input type="text" placeholder="Enter your full name" class="mt-2 input input-bordered w-full bg-slate-50" />
+              </div>
+              <div>
+                <label for="">Email</label>
+                <input type="text" placeholder="Enter your em@il" class="mt-2 input input-bordered w-full bg-slate-50" />
+              </div>
+
+              <div>
+                <label for="">Subject</label>
+                <input type="text" placeholder="Enter subject" class="mt-2 input input-bordered w-full bg-slate-50" />
+              </div>
+              <div>
+                <label for="">Phone Number</label>
+                <input type="text" placeholder="Enter your phone number" class="mt-2 input input-bordered w-full bg-slate-50" />
+              </div>
+
+
+
+            </div>
+            <div class="mt-4 font-bold">
+              <label for="">Messege</label>
+              <textarea class="w-full mt-2 textarea textarea-ghost bg-slate-50" placeholder="Bio" rows=7></textarea>
+            </div>
+            <button class="btn btn-error text-white w-full mt-3">send messege</button>
+          </div>
+
+          <!-- /// -->
+        </div>
+      </div>
+
+      </div>
+      </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+    
+
+<!-- social  -->
+<section class="container mx-auto bg-slate-300">
+  <div class="my-10 lg:my-32 mx-5 lg:mx-20 p-12">
+      <h2 class="text-center text-xl lg:text-xl font-extrabold mb-5">Social Media</h2>
+      <div class="justify-center items-center flex mx-auto lg:mx-0 gap-3">
+
+        <!-- img -->
+        <figure><img src="images/Facebook.png" alt=""></figure>
+        <figure><img src="images/Instagram.png" alt=""></figure>
+        <figure><img src="images/Linkedin.png" alt=""></figure>
+        <figure><img src="images/Twitter.png" alt=""></figure>
+    </div>
+  </div>
+</section>
+    </main>
+
+
+
+<!-- footer starts -->
+<footer class="footer p-14 bg-slate-800 text-white">
+  
+  
+  
+  
+
+  <div class="footer flex flex-col justify-center lg:items-left  items-center lg:justify-between text-left">
+  <div class="mb-2">  
+ <h3 class="font-bold text-2xl ">Get in Touch</h3>   
+    <p>Always ensure that you obtain contact <br/>Providing reliable tech since 1992</p>
+  </div>
+    <div class="">
+    <div class="flex gap-2 ">
+    <div><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></div>
+    <div>Assignment3@gmail.com</div>
+  </div>
+  <div class="flex gap-2 ">
+    <div><svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></div>
+    <div>+008 123120356</div>
+
+  </div>
+  
+</div>
+
+
+</div>
+
+
+  <div class="footer flex justify-center lg:justify-around text-center lg:text-left lg:gap-60 gap-20  ">
+    <nav>
+      <header class="footer-title font-bold text-xm  text-white ">Company</header> 
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+      <a class="link link-hover">News</a>
+      <a class="link link-hover">Legal Notice</a>
+    </nav> 
+    <nav>
+      <header class="footer-title font-bold text-xm text-white">Support</header> 
+      <a class="link link-hover">Help Centre</a>
+      <a class="link link-hover">FAQ</a>
+      <a class="link link-hover">Ticket support</a>
+      <a class="link link-hover">Advertisement</a>
+    </nav> 
+   
+  </div>
+  <div class="footer flex flex-col justify-center lg:items-left items-center text-center">
+    <nav>
+      <header class="footer-title font-bold text-xm text-white text-center">Services</header> 
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Hockey for professional</a>
+      <a class="link link-hover">Hockey for kids</a>
+      <a class="link link-hover">Hockey for Adult</a>
+    </nav>
+  </div>
+</footer>
+</body>
+
+</html>
+
+
+</body>
+
+</html>

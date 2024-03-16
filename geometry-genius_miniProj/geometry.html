@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+<!-- daistCDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header>
+
+
+    </header>    
+
+
+
+    <main>
+
+<div class="flex">
+
+    <div>
+    <!-- 1st row -->
+<div class="flex gap-3">
+    <div class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="geometry-genius-resources-main/images/triangle.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Triangle</h2>
+          <p>Area=0.5 x b x h</p>
+
+          <input id="tri-base" type="text" placeholder="b"> <span>cm</span>
+ 
+          <input id="tri-hight" type="text" placeholder="h"><span>cm</span>
+
+<div><p>Area: <span id="triArea"></span>  <span><sup>2</sup></span></p></div>          
+
+<div class="card-actions w-full">
+            <button onclick="calculate()" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- change id name u cant call frequently -->
+
+
+
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="geometry-genius-resources-main/images/parallelogram.png" alt="Shoes" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Shoes!</h2>
+          <p>Area=0.5 x b x h</p>
+
+          <input id="tri-base" type="text" placeholder="b"> <span>cm</span>
+ 
+          <input id="tri-hight" type="text" placeholder="h"><span>cm</span>
+
+<div><p>Area: <span id="triArea"></span>  <span><sup>2</sup></span></p></div>          
+
+<div class="card-actions w-full">
+            <button onclick="calculate()" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="geometry-genius-resources-main/images/pentagon.png" alt="Shoes" /></figure>
+        <div class="card-body">
+            <p>Area=0.5 x b x h</p>
+
+            <input id="tri-base" type="text" placeholder="b"> <span>cm</span>
+   
+            <input id="tri-hight" type="text" placeholder="h"><span>cm</span>
+  
+  <div><p>Area: <span id="triArea"></span>  <span><sup>2</sup></span></p></div>          
+  
+  <div class="card-actions w-full">
+              <button onclick="calculate()" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+</div>
+<!-- 2nd reow -->
+<div class="flex gap-3">
+    <div class="card w-96 bg-base-100 shadow-xl">
+        <figure><img src="geometry-genius-resources-main/images/parallelogram.png" alt="Shoes" /></figure>
+        <div class="card-body">
+            <p>Area=0.5 x b x h</p>
+
+            <input id="tri-base" type="text" placeholder="b"> <span>cm</span>
+   
+            <input id="tri-hight" type="text" placeholder="h"><span>cm</span>
+  
+  <div><p>Area: <span id="triArea"></span>  <span><sup>2</sup></span></p></div>          
+  
+  <div class="card-actions w-full">
+              <button onclick="calculate()" class="btn btn-primary">Calculate</button>
+          </div>
+        </div>
+      </div><div class="card w-96 bg-base-100 shadow-xl">
+  <figure><img src="geometry-genius-resources-main/images/rhombus.png" alt="Shoes" /></figure>
+  <div class="card-body">
+    <h2 class="card-title">Shoes!</h2>
+    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <div class="card-actions justify-end">
+      <button class="btn btn-primary">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="card w-96 bg-base-100 shadow-xl">
+    <figure><img src="geometry-genius-resources-main/images/ellipse.png" alt="Shoes" /></figure>
+    <div class="card-body">
+        <p>Area=0.5 x p x b</p>
+
+        <input id="pen-base" type="text" placeholder="p"> <span>cm</span>
+
+        <input id="pen-hight" type="text" placeholder="b"><span>cm</span>
+
+<div><p>Area: <span id="penArea"></span>  <span><sup>2</sup></span></p></div>          
+
+<div class="card-actions w-full">
+          <button onclick="calculatepen()" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+
+ 
+
+</div>
+
+
+
+</div>
+
+<div>
+    <textarea name="Area Calculate" class="text-6xl" placeholder="Area Calculate" id="" cols="60" rows="50"></textarea>
+</div>
+
+</div>
+
+    </main>
+
+<script src="penta.js"></script>
+<script src="tri_calcu.js"></script>
+</body>
+</html>

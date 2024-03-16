@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="contail.js"></script>
+
+
+    <title>Alpha Clash</title>
+</head>
+
+<body>
+
+
+
+    <main
+        class="min-h-screen bg-no-repeat bg-repeat-y bg-center   bg-black bg-[url(alphabet-clash-pro-resources-main/images/background.png)]">
+
+        <section id="home-sec " class="min-h-screen ">
+
+            <div id="hii" class="flex min-h-screen flex-col items-center justify-center">
+                <h1 class="mb-6 text-8xl uppercase">Welcome to Alpha Clash Game</h1>
+                <p class="text-4xl mb-6">Press "Enter" to Play</p>
+                <button onclick="play()" class="btn btn-warning">Play</button>
+            </div>
+        </section>
+
+
+
+        <!-- playGround -->
+
+        <section id="play-ground" class=" hidden flex flex-col items-center   ">
+            <!--screen  -->
+            <div class="items-center flex-col">
+                <div class="mb-14 mt-20">
+                    <div class=" artboard artboard-horizontal phone-4 border-8 border-black bg-slate-50	">812×375</div>
+                </div>
+
+                <!-- keyboard -->
+                <div class="mb-16">
+
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="q" class="kbd">q</kbd>
+                        <kbd id="w" class="kbd">w</kbd>
+                        <kbd id="e" class="kbd">e</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="t" class="kbd">t</kbd>
+                        <kbd id="y" class="kbd">y</kbd>
+                        <kbd id="u" class="kbd">u</kbd>
+                        <kbd id="i" class="kbd">i</kbd>
+                        <kbd id="o" class="kbd">o</kbd>
+                        <kbd id="p" class="kbd">p</kbd>
+                    </div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s" class="kbd">s</kbd>
+                        <kbd id="d" class="kbd">d</kbd>
+                        <kbd id="f" class="kbd">f</kbd>
+                        <kbd id="g" class="kbd">g</kbd>
+                        <kbd id="h" class="kbd">h</kbd>
+                        <kbd id="j" class="kbd">j</kbd>
+                        <kbd id="k" class="kbd">k</kbd>
+                        <kbd id="l" class="kbd">l</kbd>
+                    <id="              <div" /div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd class="kbd">z</kbd>
+                        <kbd class="kbd">x</kbd>
+                        <kbd class="kbd">c</kbd>
+                        <kbd class="kbd">v</kbd>
+                        <kbd class="kbd">b</kbd>
+                        <kbd class="kbd">n</kbd>
+                        <kbd class="kbd">m</kbd>
+                        <kbd class="kbd">/</kbd>
+                    </div>
+
+                </div>
+
+
+
+                <!--button  -->
+                <div class="ml-72">
+
+                    <button class="btn">
+                        Score
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+                    <button class="btn">
+                        Life
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- score -->
+
+        <section class="Result hidden">
+            <div class="flex flex-col items-center min-h-screen score">
+                <div class="card w-96 bg-base-100 shadow-xl">
+
+                    <div class="card-body">
+                        <h2 class="card-title text-8xl ">Result: </h2>
+                        <div class="card-actions p-10 pr-24 justify-end">
+                            <button class="btn btn-primary ">Play again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <script src="alpha.js"></script>
+</body>
+
+</html>

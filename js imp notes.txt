@@ -1,0 +1,123 @@
+   <---------JS review (MODULE 37)------->
+
+1. const, let
+
+2.===,!=,<=,<=,<,>,&&,||
+
+3. if, else, else if
+
+4. Array->> index, array.length, push
+   const numbers=[1,2,3]
+
+5.loop ->>
+  for(let i=0,i<numbers.length,i++)
+  const number = numbers[i];
+ 
+6. function multiply(n1,n2){
+   const result =n1*n2 ;
+   resurn result; 
+	}
+
+7.obj->>
+ const sutdent={
+name:'tahsin',
+age:23,
+skills:['kisuPareNa','abrPareo']
+}
+ const xx = student.name;
+
+
+
+
+
+                 <-----ES6----->
+
+1.Template String->>
+
+ const about =`my name is ${student.name} age of ${stdent.age} ok?`
+
+2. arrow function ->>
+
+ const getFifty = () => 55; [no parameter]
+ const xy = num => num+2; [1 parameter]
+ const isEven =x => x%2 ==0;
+ const  add = (x,y,z)=> x+y+z; [multiple parameter]
+ const doMath =(n1,n2)=> {
+ return n1+n2;}
+
+
+3.addin numb in array to array or element 
+  numb=[5,6,7]	;
+  const x= [...numb, 1,2] ;
+
+
+
+
+
+<-------Array Methods-(Map, ForEach, Filter And Find )----->
+
+const product =[
+{name:'laptop',price:3200,brand:'leno',color:'ver'},{name:'laptop',price:200,brand:'novo',color:'sler'},{name:'laptop',price:30,brand:'leno',color:'lver'}
+]
+
+1.const brand=product.map(product => product brand );
+(<----Note: sob gula obj nia ekta ARRAY banay dibe map---->)
+
+2.product.forEach(priduct=> console.log(product.price))
+(<--Note: for each .. return kore na ! just obj dia dei-->)
+
+3.FILTER
+const cheap =product.filter(product=>product.price <= 300);
+console.log(cheap);
+(filter vs find -> filter sob gula dibe, find 1st take dibe)
+4.FIND
+const cheap =product.find(product=>product.name.includes('n'));
+console.log(cheap);
+
+
+<---Array And Object Destructuring-->
+1.
+const numb =[42,65];
+const [x,y]=[42,65];
+or, const [x,y]=numb ;
+
+
+
+<-------JSON, Fetch, Keys, Values, Array Add Or Remove Using Dots-------->
+
+1.JSON (it will make everything in string both key and variable)
+
+const student ={
+name:'tahsin',
+age:23,
+movies:['kings','man']
+}
+
+(----note:obj -> JSON---)
+const studentJSON=JSON.stringify(student);
+
+(----note:JSON -> obj ---)
+const studentJSON1=parse.stringify(studentJSON);
+
+
+2.FETCH () --if not/if using not API--
+
+fetch ('url')
+  .then(res => res.json())
+  .then(data => cpnsole.log(data));
+
+
+
+<--truthy , falsy ,ternary->
+
+if(yes)
+
+if(!yes)
+
+let food=money >100? 'biriyani':'cha biscuits';
+
+
+
+<----LOCAL STORAGE----->
+
+
